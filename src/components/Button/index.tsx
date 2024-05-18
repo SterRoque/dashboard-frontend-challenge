@@ -10,8 +10,8 @@ type ButtonProps = ButtonUIProps & {
 };
 export function Button({
    icon,
-   w = '2.5rem',
-   h = '2.5rem',
+   w = '2.1875rem',
+   h = '2.1875rem',
    color = 'white',
    bgColor = 'indigo.500',
    gap = '0.625rem',
@@ -32,8 +32,8 @@ export function Button({
          {icon && (
             <Icon
                as={icon}
-               w='1.125rem'
-               h='1.125rem'
+               w='1rem'
+               h='1rem'
                color={color}
             />
          )}

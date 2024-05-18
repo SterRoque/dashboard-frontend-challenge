@@ -22,7 +22,7 @@ export function MentorAboutCard() {
          bgColor='white'
          borderRadius='1rem'
          h={showFullText ? '100%' : '16.5rem'}
-         minW='31.25rem'
+         w='100%'
          borderColor='gray.50'
          borderWidth='0.0625rem'
       >

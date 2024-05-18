@@ -10,7 +10,7 @@ export function MentorProfileCard() {
    return (
       <Flex
          bgColor='white'
-         minW='31.25rem'
+         w='100%'
          h='16.5rem'
          borderRadius='1rem'
          p='1.5625rem'
