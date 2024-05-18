@@ -7,7 +7,7 @@ export function SectionMentor() {
       <Grid
          w='100%'
          h='100%'
-         bgColor='red'
+         bgColor='gray.100'
          templateRows='repeat(2, 1fr)'
          templateColumns='repeat(2, 1fr)'
          gap='24px'

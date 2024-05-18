@@ -22,6 +22,8 @@ export function AboutMentorCard() {
          bgColor='white'
          borderRadius='16px'
          h={showFullText ? '100%' : '264px'}
+         borderColor='gray.50'
+         borderWidth='1px'
       >
          <Flex
             justify='space-between'

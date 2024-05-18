@@ -4,7 +4,6 @@ import {
    Image,
    Popover,
    PopoverBody,
-   PopoverCloseButton,
    PopoverContent,
    PopoverHeader,
    PopoverTrigger,
@@ -24,6 +23,8 @@ export function Header() {
          justify='space-between'
          pr='80px'
          pl='56px'
+         borderBottomColor='gray.50'
+         borderBottomWidth='1px'
       >
          <Flex
             align='center'

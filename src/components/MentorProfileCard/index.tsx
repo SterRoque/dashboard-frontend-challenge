@@ -13,6 +13,8 @@ export function MentorProfile() {
          h='264px'
          borderRadius='16px'
          p='25px'
+         borderColor='gray.50'
+         borderWidth='1px'
       >
          <Flex
             gap='32px'
