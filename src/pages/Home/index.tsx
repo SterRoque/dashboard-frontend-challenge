@@ -1,6 +1,6 @@
 import { Header } from '@components/Header';
 import { Container } from '@chakra-ui/react';
-import { SectionMentor } from '@components/SectionMentor';
+import { MentorSection } from '@components/MentorSection';
 
 export function Home() {
    return (
@@ -10,7 +10,7 @@ export function Home() {
          maxW='100%'
       >
          <Header />
-         <SectionMentor />
+         <MentorSection />
       </Container>
    );
 }

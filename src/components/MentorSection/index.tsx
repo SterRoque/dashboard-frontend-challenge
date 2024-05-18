@@ -1,8 +1,8 @@
 import { Grid } from '@chakra-ui/react';
-import { MentorProfile } from '../MentorProfileCard';
-import { AboutMentorCard } from '../AboutMentorCard';
+import { MentorProfileCard } from '../MentorProfileCard';
+import { MentorAboutCard } from '../MentorAboutCard';
 
-export function SectionMentor() {
+export function MentorSection() {
    return (
       <Grid
          w='100%'
@@ -12,9 +12,9 @@ export function SectionMentor() {
          templateColumns='repeat(2, 1fr)'
          gap='24px'
       >
-         <MentorProfile />
+         <MentorProfileCard />
 
-         <AboutMentorCard />
+         <MentorAboutCard />
       </Grid>
    );
 }

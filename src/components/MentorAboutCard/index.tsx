@@ -3,7 +3,7 @@ import { Button } from '../Button';
 import { FaPen } from 'react-icons/fa';
 import { useState } from 'react';
 
-export function AboutMentorCard() {
+export function MentorAboutCard() {
    const [showFullText, setShowFullText] = useState<boolean>(false);
 
    const toggleShowText = () => {

@@ -6,7 +6,7 @@ import imageMentor from '@assets/images/image-mentor.png';
 import { FaPen } from 'react-icons/fa';
 import { Button } from '../Button';
 
-export function MentorProfile() {
+export function MentorProfileCard() {
    return (
       <Flex
          bgColor='white'
