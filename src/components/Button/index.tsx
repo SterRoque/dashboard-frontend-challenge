@@ -1,38 +1,43 @@
-import { As, Flex, Icon, Text } from '@chakra-ui/react';
+import {
+   As,
+   Icon,
+   Button as ButtonUI,
+   ButtonProps as ButtonUIProps,
+} from '@chakra-ui/react';
 
-type ButtonProps = {
-   icon?: As | undefined;
-   title?: string;
-   w?: number | string;
-   h?: number | string;
-   color?: string;
-   bgColor?: string;
+type ButtonProps = ButtonUIProps & {
+   icon?: As;
 };
 export function Button({
    icon,
-   title,
-   w = '40px',
-   h = '40px',
+   w = '2.5rem',
+   h = '2.5rem',
    color = 'white',
    bgColor = 'indigo.500',
+   gap = '0.625rem',
+   children,
+   ...rest
 }: ButtonProps) {
    return (
-      <Flex
+      <ButtonUI
          bgColor={bgColor}
-         align='center'
-         justify='center'
-         borderRadius='10px'
+         borderRadius='0.625rem'
+         color={color}
          w={w}
          h={h}
          cursor='pointer'
+         gap={gap}
+         {...rest}
       >
-         <Icon
-            as={icon}
-            w='18px'
-            h='18px'
-            color={color}
-         />
-         <Text color={color}>{title}</Text>
-      </Flex>
+         {icon && (
+            <Icon
+               as={icon}
+               w='1.125rem'
+               h='1.125rem'
+               color={color}
+            />
+         )}
+         {children}
+      </ButtonUI>
    );
 }

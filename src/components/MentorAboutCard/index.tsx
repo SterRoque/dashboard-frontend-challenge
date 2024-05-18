@@ -18,12 +18,13 @@ export function MentorAboutCard() {
 
    return (
       <Box
-         p='25px'
+         p='1.5625rem'
          bgColor='white'
-         borderRadius='16px'
-         h={showFullText ? '100%' : '264px'}
+         borderRadius='1rem'
+         h={showFullText ? '100%' : '16.5rem'}
+         minW='31.25rem'
          borderColor='gray.50'
-         borderWidth='1px'
+         borderWidth='0.0625rem'
       >
          <Flex
             justify='space-between'

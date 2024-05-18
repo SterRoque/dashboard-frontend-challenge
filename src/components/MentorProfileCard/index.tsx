@@ -10,22 +10,23 @@ export function MentorProfileCard() {
    return (
       <Flex
          bgColor='white'
-         h='264px'
-         borderRadius='16px'
-         p='25px'
+         minW='31.25rem'
+         h='16.5rem'
+         borderRadius='1rem'
+         p='1.5625rem'
          borderColor='gray.50'
-         borderWidth='1px'
+         borderWidth='0.0625rem'
       >
          <Flex
-            gap='32px'
+            gap='2rem'
             align='center'
             w='100%'
          >
             <Image
                src={imageMentor}
-               w='200px'
-               h='200px'
-               borderRadius='16px'
+               w='12.5rem'
+               h='12.5rem'
+               borderRadius='1rem'
             />
             <Flex
                align='start'
@@ -34,16 +35,16 @@ export function MentorProfileCard() {
             >
                <Box>
                   <Text
-                     fontSize='24px'
+                     fontSize='1.5rem'
                      fontWeight='700'
                   >
                      Italo Souza Pereira
                   </Text>
-                  <Text fontSize='16px'>Lead Marketing Digital</Text>
+                  <Text fontSize='1rem'>Lead Marketing Digital</Text>
 
                   <Flex
-                     gap='18px'
-                     mt='32px'
+                     gap='1.125rem'
+                     mt='2rem'
                   >
                      <Image
                         src={instagramIcon}
