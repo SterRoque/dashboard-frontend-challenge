@@ -1,12 +1,12 @@
-import { Box, Flex, Icon, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import instagramIcon from '@assets/icons/instagram.svg';
 import facebookIcon from '@assets/icons/facebook.svg';
 import youtubeIcon from '@assets/icons/youtube.svg';
-
 import imageMentor from '@assets/images/image-mentor.png';
 import { FaPen } from 'react-icons/fa';
+import { Button } from '../Button';
 
-export function MenteesProfile() {
+export function MentorProfile() {
    return (
       <Flex
          bgColor='white'
@@ -43,27 +43,21 @@ export function MenteesProfile() {
                      gap='18px'
                      mt='32px'
                   >
-                     <Image src={instagramIcon} />
-                     <Image src={facebookIcon} />
-                     <Image src={youtubeIcon} />
+                     <Image
+                        src={instagramIcon}
+                        cursor='pointer'
+                     />
+                     <Image
+                        src={facebookIcon}
+                        cursor='pointer'
+                     />
+                     <Image
+                        src={youtubeIcon}
+                        cursor='pointer'
+                     />
                   </Flex>
                </Box>
-               <Flex
-                  bgColor='indigo.500'
-                  w='40px'
-                  h='40px'
-                  align='center'
-                  justify='center'
-                  borderRadius='8px'
-                  cursor='pointer'
-               >
-                  <Icon
-                     as={FaPen}
-                     w='18px'
-                     h='18px'
-                     color='white'
-                  />
-               </Flex>
+               <Button icon={FaPen} />
             </Flex>
          </Flex>
       </Flex>
